@@ -5,22 +5,22 @@ body {
   padding: 0;
   background-size: contain;
 }
-@media screen and (min-width: 800px) and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
   body {
     background-image: url("./assets/Small\ 1.png");
   }
 }
-@media screen and (min-width: 900px) and (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
   body {
     background-image: url("./assets/Medium\ 1.png");
   }
 }
-@media screen and (min-width: 1050px) and (max-width: 1680px) {
+@media screen and (max-width: 1680px) {
   body {
     background-image: url("./assets/Large\ 1.png");
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1920px) {
+@media screen and (max-width: 1920px) {
   body {
     background-image: url("./assets/Extra\ large\ 1.png");
   }
@@ -104,4 +104,44 @@ body {
 
 .menu_icon {
   width: 55px;
+}
+
+@media screen and (min-width: 1680px) and (max-width: 1920px) {
+  .bg_button {
+    width: 180px;
+    height: 180px;
+  }
+
+  .mic_trigger {
+    bottom: 30;
+    left: -10;
+    width: 65px;
+    height: 65px;
+  }
+
+  .mic_trigger_icon {
+    width: 25px;
+  }
+
+  .chatbot_trigger {
+    bottom: 120;
+    left: 70;
+    width: 65px;
+    height: 65px;
+  }
+
+  .chatbot_icon {
+    width: 25px;
+  }
+
+  .menu_trigger {
+    bottom: 15;
+    right: 15;
+    width: 80px;
+    height: 80px;
+  }
+
+  .menu_icon {
+    width: 70px;
+  }
 }
