@@ -5,26 +5,28 @@ body {
   padding: 0;
   background-size: contain;
 }
-@media screen and (max-width: 1280px) {
+@media (max-width: 1280px) {
   body {
     background-image: url("./assets/Small\ 1.png");
   }
 }
-@media screen and (max-width: 1440px) {
+@media (min-width: 1281px) and (max-width: 1440px) {
   body {
     background-image: url("./assets/Medium\ 1.png");
   }
 }
-@media screen and (max-width: 1680px) {
+@media (min-width: 1441px) and (max-width: 1680px) {
   body {
     background-image: url("./assets/Large\ 1.png");
   }
 }
-@media screen and (max-width: 1920px) {
+@media (min-width: 1681px) and (max-width: 1920px) {
   body {
     background-image: url("./assets/Extra\ large\ 1.png");
   }
 }
+
+
 
 .trigger_module {
   position: fixed;
@@ -33,8 +35,8 @@ body {
 }
 
 .bg_button {
-  width: 130px;
-  height: 130px;
+  width: 7.5vw;
+  height: 7.5vw;
   background-color: #7F2422;
   border-top-left-radius: 999px;
   position: relative;
@@ -42,11 +44,11 @@ body {
 
 .mic_trigger {
   position: absolute;
-  bottom: 20;
-  left: -10;
+  bottom: 1vw;
+  left: -1vw;
   border-radius: 999px;
-  width: 50px;
-  height: 50px;
+  width: 3vw;
+  height: 3vw;
   background-color: #C8582D;
   display: flex;
   justify-content: center;
@@ -60,16 +62,16 @@ body {
 }
 
 .mic_trigger_icon {
-  width: 20px;
+  width: 1vw;
 }
 
 .chatbot_trigger {
   position: absolute;
-  bottom: 85;
-  right: 25;
+  bottom: 5.2vw;
+  right: 1.2vw;
   border-radius: 999px;
-  width: 50px;
-  height: 50px;
+  width: 3vw;
+  height: 3vw;
   background-color: #C8582D;
   display: flex;
   justify-content: center;
@@ -83,15 +85,15 @@ body {
 }
 
 .chatbot_icon {
-  width: 20px;
+  width: 1vw;
 }
 
 .menu_trigger {
   position: absolute;
-  bottom: 5;
-  right: 5;
-  width: 70px;
-  height: 70px;
+  bottom: 0.8vw;
+  right: 0.8vw;
+  width: 3.5vw;
+  height: 3.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,10 +105,57 @@ body {
 }
 
 .menu_icon {
-  width: 55px;
+  width: 3.5vw;
 }
 
-@media screen and (min-width: 1680px) and (max-width: 1920px) {
+@media screen and (min-width: 1690px) {
+  .bg_button {
+    width: 7.2vw;
+    height: 7.2vw;
+  }
+}
+
+/* @media screen and (min-width: 1441px) and (max-width: 1680px) {
+  .bg_button {
+    width: 7.5vw;
+    height: 7.5vw;
+  }
+
+  .mic_trigger {
+    bottom: 1vw;
+    left: 1vw;
+    width: 65px;
+    height: 65px;
+  }
+
+  .mic_trigger_icon {
+    width: 25px;
+  }
+
+  .chatbot_trigger {
+    bottom: 120;
+    left: 70;
+    width: 65px;
+    height: 65px;
+  }
+
+  .chatbot_icon {
+    width: 25px;
+  }
+
+  .menu_trigger {
+    bottom: 15;
+    right: 15;
+    width: 80px;
+    height: 80px;
+  }
+
+  .menu_icon {
+    width: 70px;
+  }
+} */
+
+/* @media screen and (min-width: 1680px) and (max-width: 1920px) {
   .bg_button {
     width: 180px;
     height: 180px;
@@ -144,4 +193,4 @@ body {
   .menu_icon {
     width: 70px;
   }
-}
+} */
