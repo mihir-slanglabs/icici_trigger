@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link href="./trigger_module.css" rel="stylesheet" />
+    <script src="./trigger_module.js" ></script>
+  </head>
+  <body>
+    <div id="slang__trigger_module" class="trigger_module">
+      <div id="slang__bg_button" class="bg_button">
+        <div type="button" id="slang__mic_trigger" class="mic_trigger" onclick="trigger.get_mic_trigger()">
+          <img src="./assets/Mic 1.png" alt="slang__mic_trigger" class="mic_trigger_icon"/>
+        </div>
+        <div id="slang__chatbot_trigger" class="chatbot_trigger" onclick="trigger.get_chatbot_trigger()">
+          <img src="./assets/Chats 1.png" alt="slang__chatbot_trigger" class="chatbot_icon"/>
+        </div>
+        <div id="slang__menu_trigger" class="menu_trigger" onclick="trigger.get_menu_trigger()">
+          <img src="./assets/chatbot 11 1.png" alt="slang__menu_trigger" class="menu_icon"/>
+        </div>
+      </div>
+      
+    <script>
+      trigger.set_mic_trigger(() => {
+        console.log("Mic Trigger Set")
+      })
+      trigger.set_chatbot_trigger(() => {
+        console.log("Chatbot Trigger Set")
+      })
+      trigger.set_menu_trigger(() => {
+        console.log("Menu Trigger Set")
+      })
+    </script>
+    </div>
+  </body>
+</html>
